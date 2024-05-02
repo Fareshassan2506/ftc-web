@@ -1,23 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './App.css'; // This imports the main CSS for your App, ensure it does not hide your Footer.
+import Footer from './components/footer'; // Adjust the path as necessary to where your Footer component is located.
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Footer /> {/* This line ensures that Footer component is rendered */}
     </div>
   );
 }
